@@ -15,8 +15,8 @@ const tabledata = [
 
 const tabulator_demo_options = {
     data: tabledata,           //load row data from array
-    height: "24vh",
-    layout: 'fitData' as any,      //fit columns to width of table
+    height: '50vh',
+    layout: 'fitColumns' as any,      //fit columns to width of table
     // responsiveLayout: "hide",  //hide columns that dont fit on the table
     // addRowPos: "top",          //when adding a new row, add it to the top of the table
     // history: true,             //allow undo and redo actions on the table
@@ -32,7 +32,7 @@ const tabulator_demo_options = {
     // },
     columns: [                 //define the table columns
         { title: "Name", field: "name", editor: "input" as Editor },
-        { title: "Task Progress", field: "progress", hozAlign: "left" as ColumnDefinitionAlign, formatter: "progress" as Formatter, editor: true as Editor },
+        // { title: "Task Progress", field: "progress", hozAlign: "left" as ColumnDefinitionAlign, formatter: "progress" as Formatter, editor: true as Editor },
         { title: "Gender", field: "gender", width: 95, editor: "select" as Editor, editorParams: { values: ["male", "female"] } },
         // { title: "Rating", field: "rating", formatter: "star", hozAlign: "center" as ColumnDefinitionAlign, width: 100, editor: true as Editor },
         // { title: "Color", field: "col", width: 130, editor: "input" as Editor },
