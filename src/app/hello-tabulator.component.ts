@@ -15,7 +15,7 @@ const tabledata = [
 
 const tabulator_demo_options = {
     data: tabledata,           //load row data from array
-    height: "84vh",
+    height: "24vh",
     layout: 'fitData' as any,      //fit columns to width of table
     // responsiveLayout: "hide",  //hide columns that dont fit on the table
     // addRowPos: "top",          //when adding a new row, add it to the top of the table
